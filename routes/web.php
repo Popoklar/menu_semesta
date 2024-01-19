@@ -19,5 +19,11 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', HomeComponent::class);
-Route::get('/product', DetailProductComponent::class);
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/', HomeComponent::class);
+    Route::get('/product', DetailProductComponent::class);
+
+    Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
