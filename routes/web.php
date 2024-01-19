@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Livewire\DetailProductComponent;
+use App\Http\Livewire\HomeComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('index');
-});
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', HomeComponent::class);
+Route::get('/product', DetailProductComponent::class);
