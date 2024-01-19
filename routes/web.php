@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\DetailProductComponent;
 use App\Http\Livewire\HomeComponent;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', HomeComponent::class);
+Route::get('/product', DetailProductComponent::class);
