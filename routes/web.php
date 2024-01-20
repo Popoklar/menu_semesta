@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Livewire\CheckoutComponent;
 use App\Http\Livewire\DetailProductComponent;
 use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\ShoppingCartComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +24,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/', HomeComponent::class);
     Route::get('/product', DetailProductComponent::class);
+    Route::get('/cart', ShoppingCartComponent::class);
+    Route::get('/checkout', CheckoutComponent::class);
 
     Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
         return view('dashboard');
