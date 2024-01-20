@@ -1,12 +1,12 @@
 <!-- BEGIN SIDEBAR & CONTENT -->
 @foreach ($categories as $cat)
-@if ($products->category_id === $cat->id)
-@foreach ($products as $prod)
 <div class="row margin-bottom-40 ">
     <!-- BEGIN CONTENT -->
     <div class="col-md-12 col-sm-12">
-        <h2>{{ $prod->category->name }}</h2>
+        <h2>{{ $cat->name }}</h2>
         <div class="owl-carousel owl-carousel2">
+            @foreach ($products as $prod)
+            @if ($prod->category_id == $cat->id)
             <div>
                 <div class="product-item">
                     <div class="pi-img-wrapper">
@@ -18,17 +18,17 @@
                             <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                         </div>
                     </div>
-                    <h3><a href="shop-item.html">{{ $prod->category->name }}</a></h3>
-                    <div class="pi-price">{{ $prod->price }}</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                    <h3><a href="shop-item.html">{{ $prod->name }}</a></h3>
+                    <div class="pi-price">Rp {{ $prod->price }}</div>
+                    <a href="javascript:;" class="btn btn-default add2cart"><i class="fa fa-plus text-danger"></i></a>
                     <div class="sticker sticker-new"></div>
                 </div>
             </div>
+            @endif
+            @endforeach
         </div>
     </div>
     <!-- END CONTENT -->
 </div>
-@endforeach
-@endif
 @endforeach
 <!-- END SIDEBAR & CONTENT -->
