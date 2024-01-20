@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Order;
+use App\Models\OrderDetail;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class CheckoutSeeder extends Seeder
@@ -9,7 +12,7 @@ class CheckoutSeeder extends Seeder
     public function run()
     {
         // Create a checkout
-        $checkout = Checkout::create([
+        $checkout = Order::create([
             'user_id' => 1, // Replace with an existing user ID
             'total_amount' => 0,
         ]);
@@ -18,7 +21,7 @@ class CheckoutSeeder extends Seeder
         $products = Product::all();
 
         foreach ($products as $product) {
-            DetailCheckout::create([
+            OrderDetail::create([
                 'checkout_id' => $checkout->id,
                 'product_id' => $product->id,
                 'quantity' => rand(1, 5),

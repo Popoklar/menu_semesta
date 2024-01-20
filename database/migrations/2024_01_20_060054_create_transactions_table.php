@@ -14,8 +14,14 @@ class CreateTransactionsTable extends Migration
     public function up()
     {
         Schema::create('transactions', function (Blueprint $table) {
-            $table->id();
+            $table->string('id')->primary();
+            $table->bigInteger('user_id')->unsigned();
+            $table->string('order_id', 36);
+            $table->enum('transfer', ['Bank Mandiri', 'Dana', 'Shopeepay'])->default('Dana');
+            $table->enum('status', ['menunggu', 'disetujui', 'ditolak', 'dibatalkan', 'dikembalikan'])->default('menunggu');
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
         });
     }
 
