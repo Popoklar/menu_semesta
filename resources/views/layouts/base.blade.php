@@ -79,7 +79,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <!-- BEGIN HEADER -->
     <div class="header">
         <div class="container">
-            <a class="site-logo" style="image-resolution: 20px" href="shop-index.html"><img
+            <a class="site-logo" style="image-resolution: 20px" href="/"><img
                     src="{{ asset('/template/theme/images') }}/LOGO2.jpg" alt="Semesta Menu"
                     style="width: 100px; height: auto;">
             </a>
