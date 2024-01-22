@@ -21,7 +21,6 @@
                     <h3><a href="{{ route('product.detail', ['slug' => $prod->slug]) }}">{{ $prod->name }}</a></h3>
                     <div class="pi-price">Rp {{ number_format($prod->price, 0, '.', '.') }}</div>
                     <a href="javascript:;" class="btn btn-default add2cart"><i class="fa fa-plus text-danger"></i></a>
-                    <div class="sticker sticker-new"></div>
                 </div>
             </div>
             @endif
