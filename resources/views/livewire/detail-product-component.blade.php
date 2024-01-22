@@ -6,32 +6,33 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="product-main-image">
-                        <img src="{{ asset('/template/theme/assets') }}/pages/img/products/model7.jpg" alt="Canda"
-                            class="img-responsive"
-                            data-BigImgsrc="{{ asset('/template/theme/assets') }}/pages/img/products/model7.jpg">
+                        <img src="{{ asset('/template/theme/assets') }}/pages/img/products/{{ $product->image }}"
+                            alt="Canda" class="img-responsive"
+                            data-BigImgsrc="{{ asset('/template/theme/assets') }}/pages/img/products/{{ $product->image }}">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
-                    <h1>Canda</h1>
+                    <h1>{{ $product->name }}</h1>
                     <div class="price-availability-block clearfix">
                         <div class="price">
-                            <strong><span>Rp</span> 47.600</strong>
+                            <strong><span>Rp</span> {{ number_format($product->price, 0, '.', '.') }}</strong>
                         </div>
                     </div>
                     <div class="description">
-                        <p>Rasakan kelezatan khas gula aren yang eksotis, kelembutan full cream, dan
-                            kenikmatan kopi dalam setiap tegukan Canda. Pengalaman kopi yang unik dan
-                            memikat untuk menyemarakkan hari Anda.</p>
+                        <p>{{ $product->description }}</p>
                     </div>
                     <div class="product-page-cart">
                         <div class="product-quantity">
-                            <input id="product-quantity" type="text" value="1" readonly class="form-control input-sm">
+                            <input class="form-control input-sm" type="text" name="product-quantity" value="{{ $qty }}"
+                                data-max="120" pattern="[0-9]*" wire:model="qty">
                         </div>
-                        <button class="btn btn-primary" type="submit"><i class="fa fa-shopping-cart"></i></button>
+                        <a href="#" class="btn btn-primary"
+                            wire:click.prevent="store('{{ $product->id }}','{{ $product->name }}',{{ $product->price }})"
+                            wire:loading.attr="disabled"><i class="fa fa-shopping-cart"></i> Tambahkan keranjang</a>
                     </div>
                 </div>
 
-                <div class="sticker sticker-sale"></div>
+                {{-- <div class="sticker sticker-sale"></div> --}}
             </div>
         </div>
     </div>
