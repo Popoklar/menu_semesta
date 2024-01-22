@@ -20,6 +20,7 @@ return array(
     'App\\Http\\Livewire\\CheckoutComponent' => $baseDir . '/app/Http/Livewire/CheckoutComponent.php',
     'App\\Http\\Livewire\\DetailProductComponent' => $baseDir . '/app/Http/Livewire/DetailProductComponent.php',
     'App\\Http\\Livewire\\HomeComponent' => $baseDir . '/app/Http/Livewire/HomeComponent.php',
+    'App\\Http\\Livewire\\SearchComponent' => $baseDir . '/app/Http/Livewire/SearchComponent.php',
     'App\\Http\\Livewire\\ShoppingCartComponent' => $baseDir . '/app/Http/Livewire/ShoppingCartComponent.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',

@@ -199,7 +199,7 @@ Header and header elements
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: #e84d1c;
+	background: #124e08;
 	color: #fff;
 	padding: 8px 8px 7px;
 	border-radius: 16px !important;
@@ -237,7 +237,7 @@ Header and header elements
 	content: " ";
 	display: block;
 	position: absolute;
-	border-bottom: 8px solid #e6400c;
+	border-bottom: 8px solid #124E08;
 	border-right: 8px solid transparent;
 	border-left: 8px solid transparent;
 }
@@ -459,7 +459,7 @@ Header and header elements
 }
 
 .product-item .btn:hover {
-	background: #e84d1c;
+	background: #124e08;
 	border-color: #c8c8c8;
 }
 
@@ -478,7 +478,7 @@ Header and header elements
 }
 
 .pi-price {
-	color: #e84d1c;
+	color: #124e08;
 	font: 18px 'PT Sans Narrow', sans-serif;
 	float: left;
 	padding-top: 1px;
@@ -493,8 +493,8 @@ Header and header elements
 
 .product-item .add2cart:hover {
 	color: #fff !important;
-	background: #E84D1C !important;
-	border-color: #E84D1C;
+	background: #124e08 !important;
+	border-color: #124e08;
 }
 
 .shop-index-carousel {
@@ -552,7 +552,7 @@ Header and header elements
 .goods-page-total strong,
 .checkout-price strong,
 .checkout-total strong {
-	color: #e84d1c;
+	color: #124e08;
 	font-size: 21px;
 	font-weight: normal;
 }
@@ -579,7 +579,7 @@ Header and header elements
 
 .goods-data a,
 .checkout-page .checkout-description a {
-	color: #e6400c;
+	color: #124E08;
 }
 
 .goods-page-description em,
@@ -653,7 +653,7 @@ Header and header elements
 
 .shopping-total strong,
 .checkout-total-block strong {
-	color: #e84d1c;
+	color: #124e08;
 	font: 21px 'PT Sans Narrow', sans-serif;
 	font-weight: normal;
 	float: right;
@@ -883,7 +883,7 @@ div.radio.disabled.active span.checked {
 }
 
 .compare-item strong {
-	color: #E84D1C;
+	color: #124e08;
 	font-size: 21px;
 	font-weight: normal;
 }
@@ -1030,7 +1030,7 @@ div.radio.disabled.active span.checked {
 
 .sidebar-products .price {
 	margin-left: 80px;
-	color: #E84D1C;
+	color: #124e08;
 	font: 16px 'PT Sans Narrow', sans-serif;
 }
 
@@ -1082,7 +1082,7 @@ div.radio.disabled.active span.checked {
 }
 
 .price-availability-block .price strong {
-	color: #e84d1c;
+	color: #124e08;
 	font-size: 35px;
 	font-weight: normal;
 }
@@ -1240,7 +1240,7 @@ table .product-quantity .input-group {
 }
 
 .product-page .review a {
-	color: #e6400c;
+	color: #124E08;
 }
 
 .product-page .social-icons li a {
@@ -1306,7 +1306,7 @@ table .product-quantity .input-group {
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
-	background: #E6400C;
+	background: #124E08;
 	color: #fff;
 }
 
@@ -1418,7 +1418,7 @@ table .product-quantity .input-group {
 
 .list-view-sorting a {
 	background: #fff;
-	color: #E6400C;
+	color: #124E08;
 	display: inline-block;
 	padding: 4px 6px;
 	line-height: 1;

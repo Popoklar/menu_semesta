@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Cart;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 class ShoppingCartComponent extends Component
 {
@@ -26,6 +27,7 @@ class ShoppingCartComponent extends Component
         $this->setAmountforCheckout();
         $subtotal = Cart::instance('cart')->subtotal();
         $total = (Cart::instance('cart')->total());
-        return view('livewire.shopping-cart-component', ['total' => $total, 'subtotal' => $subtotal])->layout('layouts.base');
+        $tanggal = Carbon::now()->subDay();
+        return view('livewire.shopping-cart-component', ['total' => $total, 'subtotal' => $subtotal, 'tanggal' => $tanggal])->layout('layouts.base');
     }
 }

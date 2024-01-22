@@ -590,6 +590,7 @@ class ComposerStaticInit2155a3f28ed0af5d1f9a756db2322918
         'App\\Http\\Livewire\\CheckoutComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/CheckoutComponent.php',
         'App\\Http\\Livewire\\DetailProductComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/DetailProductComponent.php',
         'App\\Http\\Livewire\\HomeComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/HomeComponent.php',
+        'App\\Http\\Livewire\\SearchComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/SearchComponent.php',
         'App\\Http\\Livewire\\ShoppingCartComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/ShoppingCartComponent.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',

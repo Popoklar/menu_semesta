@@ -5,6 +5,9 @@
         @if (Cart::instance('cart')->count() > 0)
         <div class="goods-data clearfix">
             <div class="table-wrapper-responsive">
+                <h2 class="text-center">Tunjukan pesanan berikut ke kasir.</h2>
+                <p class="text-center"><strong>Tanggal Pesanan:</strong> {{ $tanggal }}</p>
+                <hr>
                 <table summary="Shopping cart">
                     <tr>
                         <th><strong>Gambar</strong></th>
@@ -64,8 +67,9 @@
                 </ul>
             </div> --}}
         </div>
-        <button class="btn btn-default" type="submit">Continue shopping <i class="fa fa-shopping-cart"></i></button>
-        <button class="btn btn-primary" type="submit">Checkout <i class="fa fa-check"></i></button>
+        {{-- <button class="btn btn-default" type="submit">Continue shopping <i
+                class="fa fa-shopping-cart"></i></button>
+        <button class="btn btn-primary" type="submit">Checkout <i class="fa fa-check"></i></button> --}}
         {{-- <a class="btn btn-checkout title-box" href="#" wire:click.prevent="checkout">
             Checkout
         </a> --}}
