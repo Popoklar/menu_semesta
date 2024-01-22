@@ -32,20 +32,20 @@ class ProductFactory extends Factory
     {
         $products = [
             // ICE-COFFEE
-            ['name' => 'Canda', 'description' => 'Rasakan kelezatan khas gula aren yang eksotis, ...', 'price' => 20000],
-            ['name' => 'Tawa', 'description' => 'Tawa membawa kebahagiaan dengan sentuhan creamy yang lembut, ...', 'price' => 21000],
-            ['name' => 'Aura', 'description' => 'Aura menghadirkan harmoni rasa vanilla yang lembut, ...', 'price' => 24000],
-            ['name' => 'Kina', 'description' => 'Kina memikat dengan kelezatan karamel yang memikat, ...', 'price' => 23000],
+            ['name' => 'Canda', 'description' => 'Rasakan kelezatan khas gula aren yang eksotis, ...', 'price' => 20000, 'image' => ''],
+            ['name' => 'Tawa', 'description' => 'Tawa membawa kebahagiaan dengan sentuhan creamy yang lembut, ...', 'price' => 21000, 'image' => ''],
+            ['name' => 'Aura', 'description' => 'Aura menghadirkan harmoni rasa vanilla yang lembut, ...', 'price' => 24000, 'image' => ''],
+            ['name' => 'Kina', 'description' => 'Kina memikat dengan kelezatan karamel yang memikat, ...', 'price' => 23000, 'image' => ''],
 
             // NON-COFFEE
-            ['name' => 'Matcha', 'description' => 'Matcha membawa Anda ke dunia kenikmatan dengan paduan sempurna ...', 'price' => 23000],
-            ['name' => 'Red Velvet', 'description' => 'Red Velvet memukau dengan sentuhan bubuk Red Velvet yang istimewa, ...', 'price' => 22000],
+            ['name' => 'Matcha', 'description' => 'Matcha membawa Anda ke dunia kenikmatan dengan paduan sempurna ...', 'price' => 23000, 'image' => ''],
+            ['name' => 'Red Velvet', 'description' => 'Red Velvet memukau dengan sentuhan bubuk Red Velvet yang istimewa, ...', 'price' => 22000, 'image' => ''],
 
             // HOT-COFFEE
-            ['name' => 'Latte', 'description' => 'Latte menghadirkan keharuman espresso yang dicampur dengan susu creamy, ...', 'price' => 24000],
-            ['name' => 'Americano', 'description' => 'Americano menghadirkan keindahan kopi yang sederhana namun memukau. ...', 'price' => 18000],
-            ['name' => 'Vietnam Drip', 'description' => 'Vietnam Drip mempersembahkan sensasi kopi Vietnam yang kaya dan aromatik. ...', 'price' => 30000],
-            ['name' => 'V-60', 'description' => 'V-60 menghadirkan keindahan kopi pour-over dengan desain elegan. ...', 'price' => 30000],
+            ['name' => 'Latte', 'description' => 'Latte menghadirkan keharuman espresso yang dicampur dengan susu creamy, ...', 'price' => 24000, 'image' => ''],
+            ['name' => 'Americano', 'description' => 'Americano menghadirkan keindahan kopi yang sederhana namun memukau. ...', 'price' => 18000, 'image' => ''],
+            ['name' => 'Vietnam Drip', 'description' => 'Vietnam Drip mempersembahkan sensasi kopi Vietnam yang kaya dan aromatik. ...', 'price' => 30000, 'image' => ''],
+            ['name' => 'V-60', 'description' => 'V-60 menghadirkan keindahan kopi pour-over dengan desain elegan. ...', 'price' => 30000, 'image' => ''],
         ];
 
 

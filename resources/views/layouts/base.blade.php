@@ -87,20 +87,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             @if(!Request::is('checkout') && !Request::is('cart'))
             @livewire('cart-count-component')
 
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-            <datalist id="datalistOptions">
-                <option value="New York" data-url="shop-detail-product.html"></option>
-                <option value="Seattle" data-url="shop-detail-product.html"></option>
-                <option value="Los Angeles" data-url="shop-detail-product.html"></option>
-                <option value="Capcut" data-url="shop-detail-product.html"></option>
-                <option value="Capres" data-url="shop-detail-product.html"></option>
-                <option value="Captain" data-url="shop-detail-product.html"></option>
-                <option value="Caprcorn" data-url="shop-detail-product.html"></option>
-                <option value="Chicago" data-url="shop-detail-product.html"></option>
-                <option value="Chili" data-url="shop-detail-product.html"></option>
-                <option value="Child" data-url="shop-detail-product.html"></option>
-                <option value="Chill" data-url="shop-detail-product.html"></option>
-            </datalist>
+            @livewire('search-component')
 
             @endif
 
