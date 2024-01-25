@@ -27,7 +27,7 @@ class ShoppingCartComponent extends Component
         $this->setAmountforCheckout();
         $subtotal = Cart::instance('cart')->subtotal();
         $total = (Cart::instance('cart')->total());
-        $tanggal = Carbon::now()->subDay();
+        $tanggal = Carbon::now('Asia/Jakarta')->subDay();
         return view('livewire.shopping-cart-component', ['total' => $total, 'subtotal' => $subtotal, 'tanggal' => $tanggal])->layout('layouts.base');
     }
 }

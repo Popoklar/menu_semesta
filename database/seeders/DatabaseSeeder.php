@@ -19,25 +19,59 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         Category::create(
             [
-                'name' => 'Cappuccino',
-                'slug' => 'cappuccino'
+                'name' => 'Hot Coffe',
+                'slug' => 'hot-coffe'
             ]
         );
 
         Category::create(
             [
-                'name' => 'Affogato',
-                'slug' => 'affogato'
+                'name' => 'Non Coffe',
+                'slug' => 'non-coffe'
             ]
         );
 
         Category::create(
             [
-                'name' => 'Macchiato',
-                'slug' => 'macchiato'
+                'name' => 'Ice Coffe',
+                'slug' => 'ice-coffe'
             ]
         );
 
-        \App\Models\Product::factory(10)->create();
+        Category::create(
+            [
+                'name' => 'Squash',
+                'slug' => 'squash'
+            ]
+        );
+
+        Category::create(
+            [
+                'name' => 'Ice Blend',
+                'slug' => 'ice-blend'
+            ]
+        );
+
+        Category::create(
+            [
+                'name' => 'Mocktail',
+                'slug' => 'mocktail'
+            ]
+        );
+
+        Category::create(
+            [
+                'name' => 'Snack',
+                'slug' => 'snack'
+            ]
+        );
+
+        Category::create(
+            [
+                'name' => 'Main Course',
+                'slug' => 'main-course'
+            ]
+        );
+        \App\Models\Product::factory(61)->create();
     }
 }

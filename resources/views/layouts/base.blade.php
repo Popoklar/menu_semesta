@@ -103,15 +103,26 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         </div>
     </div>
 
-    <!-- BEGIN FOOTER -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <!-- BEGIN COPYRIGHT -->
-                <div class="col-md-12 col-sm-12 text-center">
-                    2024 © Yuriko. ALL Rights Reserved.
-                </div>
-                <!-- END COPYRIGHT -->
+<!-- BEGIN FOOTER -->
+<div class="show-footer">
+    <!-- Konten Halaman Web Anda di Sini -->
+    <footer class="footer text-center">
+        <div class="footer-content">
+            <div class="left-content">
+                <a class="btn btn-danger" href="{{ route('dashboard') }}"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log Out</a>
+                <form id="logout-form" method="POST" action="{{ route('logout') }}">
+                    @csrf
+                </form>
+            </div>
+            <div class="right-content">
+                <p class="text-muted">©️ 2024 Yuriko. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- END FOOTER -->
+
             </div>
         </div>
     </div>
@@ -172,8 +183,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <script src="{{ asset('/template/theme/assets') }}/plugins/jquery.min.js" type="text/javascript"></script>
     <script src="{{ asset('/template/theme/assets') }}/plugins/jquery-migrate.min.js" type="text/javascript"></script>
     <script src="{{ asset('/template/theme/assets') }}/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript">
-    </script>
-    <script src="{{ asset('/template/theme/assets') }}/corporate/scripts/back-to-top.js" type="text/javascript">
     </script>
     <script src="{{ asset('/template/theme/assets') }}/plugins/jquery-slimscroll/jquery.slimscroll.min.js"
         type="text/javascript"></script>
