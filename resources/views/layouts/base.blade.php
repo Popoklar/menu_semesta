@@ -103,28 +103,23 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         </div>
     </div>
 
-<!-- BEGIN FOOTER -->
-<div class="show-footer">
-    <!-- Konten Halaman Web Anda di Sini -->
-    <footer class="footer text-center">
-        <div class="footer-content">
-            <div class="left-content">
-                <a class="btn btn-danger" href="{{ route('dashboard') }}"
-                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log Out</a>
-                <form id="logout-form" method="POST" action="{{ route('logout') }}">
-                    @csrf
-                </form>
+    <!-- BEGIN FOOTER -->
+    <div class="show-footer">
+        <!-- Konten Halaman Web Anda di Sini -->
+        <footer class="footer text-center">
+            <div class="footer-content">
+                <div class="left-content">
+                    <a class="btn btn-danger" href="{{ route('dashboard') }}"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log Out</a>
+                    <form id="logout-form" method="POST" action="{{ route('logout') }}">
+                        @csrf
+                    </form>
+                </div>
+                <div class="right-content">
+                    <p class="text-muted">©️ 2024 Yuriko. All Rights Reserved.</p>
+                </div>
             </div>
-            <div class="right-content">
-                <p class="text-muted">©️ 2024 Yuriko. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-</div>
-<!-- END FOOTER -->
-
-            </div>
-        </div>
+        </footer>
     </div>
     <!-- END FOOTER -->
 
@@ -169,7 +164,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                     </div>
                 </div>
 
-                <div class="sticker sticker-sale"></div>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@
                 <div class="col-md-6 col-sm-6">
                     <div class="product-main-image">
                         <img src="{{ asset('/template/theme/images') }}/{{ $product->image }}"
-                            alt="Canda" class="img-responsive"
+                            alt="{{ $product->name }}" class="img-responsive"
                             data-BigImgsrc="{{ asset('/template/theme/images') }}/{{ $product->image }}">
                     </div>
                 </div>

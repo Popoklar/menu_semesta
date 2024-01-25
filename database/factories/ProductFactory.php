@@ -30,7 +30,7 @@ class ProductFactory extends Factory
      */
     public function definition()
     {
-       $products = [
+        $products = [
             // ICE-COFFEE
             ['name' => 'Canda', 'description' => 'PALM SUGAR. FULL CREAM. COFFEE, ...', 'price' => 20000, 'image' => 'canda.jpg'],
             ['name' => 'Tawa', 'description' => 'CREAMY, SWEET, COFFEE, ...', 'price' => 21000, 'image' => 'tawa.jpg'],
@@ -88,7 +88,7 @@ class ProductFactory extends Factory
             ['name' => 'Strawberry Kiwi Crush', 'description' => 'Stroberi segar, kiwi, dan soda', 'price' => 30000, 'image' => 'crush.jpg'],
             ['name' => 'Pineapple Punch Pleasure', 'description' => 'Nanas segar, sirup vanilla, dan sparkling water', 'price' => 30000, 'image' => 'pleasure.jpg'],
             ['name' => 'Cucumber Mint Refresher', 'description' => 'Mentimun segar, mint, dan soda', 'price' => 30000, 'image' => 'refresher.jpg'],
-            
+
 
             // SNACK
             ['name' => 'Curos', 'description' => 'DELICIOUS ...', 'price' => 19000, 'image' => 'curos.jpg'],
@@ -119,7 +119,7 @@ class ProductFactory extends Factory
             ['name' => 'Mango Tango Burst', 'description' => 'Tango of fresh mango flavors bursting in your mouth', 'price' => 29000, 'image' => 'mango-burst.jpg'],
             ['name' => 'Midnight Magic', 'description' => 'A mysterious and enchanting blend for a magical night', 'price' => 31000, 'image' => 'midnight-magic.jpg'],
             ['name' => 'Forest Berry Fusion', 'description' => 'A fusion of wild berries for a taste of the forest', 'price' => 27000, 'image' => 'berry-fusion.jpg'],
-            ['name' => 'Peachy Paradise', 'description' => 'Peachy goodness for a taste of paradise', 'price' => 28000, 'image' => 'peachy-paradise.jpg'],            
+            ['name' => 'Peachy Paradise', 'description' => 'Peachy goodness for a taste of paradise', 'price' => 28000, 'image' => 'peachy-paradise.jpg'],
             ['name' => 'Cranberry Crush', 'description' => 'Sweet and tart cranberry delight', 'price' => 26000, 'image' => 'cranberry-crush.jpg'],
             ['name' => 'Blue Lagoon Bliss', 'description' => 'A blue lagoon-inspired refreshing drink', 'price' => 28000, 'image' => 'blue-lagoon-bliss.jpg'],
             ['name' => 'Pineapple Passion Fusion', 'description' => 'Passionate fusion of pineapple flavors', 'price' => 27000, 'image' => 'pineapple-passion-fusion.jpg'],
@@ -130,9 +130,7 @@ class ProductFactory extends Factory
             ['name' => 'Passionfruit Perfection', 'description' => 'Perfect blend of passionfruit flavors', 'price' => 27000, 'image' => 'passionfruit-perfection.jpg'],
             ['name' => 'Mango Mint Medley', 'description' => 'Mango and mint medley for a refreshing twist', 'price' => 29000, 'image' => 'mango-mint-medley.jpg'],
             ['name' => 'Wild Watermelon Wave', 'description' => 'Ride the wave of wild watermelon goodness', 'price' => 26000, 'image' => 'wild-watermelon-wave.jpg'],
-
-        ]; 
-
+        ];
 
         $categories = Category::pluck('id')->toArray();
 
@@ -156,4 +154,3 @@ class ProductFactory extends Factory
         ];
     }
 }
-
