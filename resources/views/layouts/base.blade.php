@@ -104,22 +104,22 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     </div>
 
     <!-- BEGIN FOOTER -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <a class="btn btn-danger" href="{{ route('dashboard') }}"
-                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Keluar</a>
-                <form id="logout-form" method="POST" action="{{ route('logout') }}">
-                    @csrf
-                </form>
-                <br>
-                <!-- BEGIN COPYRIGHT -->
-                <div class="col-md-12 col-sm-12 text-center">
-                    2024 © Yuriko. ALL Rights Reserved.
+    <div class="show-footer">
+        <!-- Konten Halaman Web Anda di Sini -->
+        <footer class="footer text-center">
+            <div class="footer-content">
+                <div class="left-content">
+                    <a class="btn btn-danger" href="{{ route('dashboard') }}"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log Out</a>
+                    <form id="logout-form" method="POST" action="{{ route('logout') }}">
+                        @csrf
+                    </form>
                 </div>
-                <!-- END COPYRIGHT -->
+                <div class="right-content">
+                    <p class="text-muted">©️ 2024 Yuriko. All Rights Reserved.</p>
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
     <!-- END FOOTER -->
 

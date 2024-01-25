@@ -38,6 +38,40 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        \App\Models\Product::factory(10)->create();
+        Category::create(
+            [
+                'name' => 'Squash',
+                'slug' => 'squash'
+            ]
+        );
+
+        Category::create(
+            [
+                'name' => 'Ice Blend',
+                'slug' => 'ice-blend'
+            ]
+        );
+
+        Category::create(
+            [
+                'name' => 'Mocktail',
+                'slug' => 'mocktail'
+            ]
+        );
+
+        Category::create(
+            [
+                'name' => 'Snack',
+                'slug' => 'snack'
+            ]
+        );
+
+        Category::create(
+            [
+                'name' => 'Main Course',
+                'slug' => 'main-course'
+            ]
+        );
+        \App\Models\Product::factory(61)->create();
     }
 }

@@ -1981,60 +1981,84 @@ Pre-Footer and pre-footer elements
 
 /* footer */
 .footer {
-	background: #272626;
-	color: #fff;
-	font-size: 12px;
-	padding: 15px 0;
+    background: #0a2c05;
+    color: #fff;
+    padding: 5px 0; /* Sesuaikan dengan kebutuhan Anda */
+}
+
+.footer p {
+    font-size: 7px; /* Sesuaikan dengan ukuran yang diinginkan */
 }
 
 .footer-light {
-	background: #F9F9F9;
-	color: #3e4d5c;
+    background: #F9F9F9;
+    color: #3e4d5c;
 }
 
 .footer-gray {
-	background: #4A5866;
+    background: #4A5866;
 }
 
 .footer a {
-	color: #fff;
-	text-decoration: underline;
+    color: #fff;
+    text-decoration: underline;
 }
 
 .footer a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .footer-light a {
-	color: inherit;
+    color: inherit;
 }
 
 .footer .padding-top-10 {
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
 .footer .list-inline>li:last-child {
-	padding-right: 0;
+    padding-right: 0;
 }
 
 .footer ul {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .footer ul.social-footer {
-	font-size: 18px;
-	padding-top: 5px;
+    font-size: 18px;
+    padding-top: 5px;
 }
 
 .footer ul.social-footer a {
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
 .footer ul.social-footer a:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Tengahkan vertikal */
+}
+
+.left-content {
+    order: 2; /* Urutan ke-2 (kanan) */
+    flex-grow: 1; /* Memenuhi sisa ruang */
+}
+
+.right-content {
+    order: 1; /* Urutan ke-1 (kiri) */
+    margin-right: 150px; /* Jarak antara button dan teks */
+}
+
+/* Hanya untuk menunjukkan warna latar belakang */
+.show-footer {
+    background: #333; /* Sesuaikan dengan warna yang diinginkan */
+    padding: 5px 0; /* Sesuaikan dengan kebutuhan Anda */
+}
 
 /***
 Custom icon buttons

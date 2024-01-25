@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'c5f9f55a1a0821fbd99119bf8012028d0cc0b592',
+        'reference' => 'cb349f5a543aabb6edffd2f91dc6412d20b5c793',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -415,6 +415,15 @@
                 0 => 'v8.83.27',
             ),
         ),
+        'itsgoingd/clockwork' => array(
+            'pretty_version' => 'v5.1.12',
+            'version' => '5.1.12.0',
+            'reference' => 'c9dbdbb1f0efd19bb80f1080ef63f1b9b1bc3b1b',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../itsgoingd/clockwork',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'jaybizzle/crawler-detect' => array(
             'pretty_version' => 'v1.2.116',
             'version' => '1.2.116.0',
@@ -469,7 +478,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'c5f9f55a1a0821fbd99119bf8012028d0cc0b592',
+            'reference' => 'cb349f5a543aabb6edffd2f91dc6412d20b5c793',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
