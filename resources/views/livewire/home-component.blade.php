@@ -12,6 +12,7 @@
                     <div class="pi-img-wrapper">
                         <img src="{{ asset('/template/theme/images') }}/{{ $prod->image }}"
                             class="img-responsive" alt="Berry Lace Dress">
+
                         <div>
                             <a href="{{ asset('/template/theme/images') }}/{{ $prod->image }}"
                                 class="btn btn-default fancybox-button">Zoom</a>
