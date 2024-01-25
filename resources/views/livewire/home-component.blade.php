@@ -9,7 +9,7 @@
             @if ($prod->category_id == $cat->id)
             <div>
                 <div class="product-item">
-                    <div class="pi-img-newest">
+                    <div class="pi-img-wrapper">
                         <img src="{{ asset('/template/theme/images') }}/{{ $prod->image }}" class="img-responsive"
                             alt="{{ $prod->name }}">
 
