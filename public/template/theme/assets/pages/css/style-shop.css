@@ -428,6 +428,36 @@ Header and header elements
 	right: 0;
 }
 
+.pi-img-newest {
+	position: relative;
+	width: 100%;
+	/* Sesuaikan dengan lebar yang diinginkan */
+	height: 0;
+	padding-bottom: 100%;
+	/* Rasio aspek 1:1, sesuaikan jika ingin rasio yang berbeda */
+	overflow: hidden;
+}
+
+.pi-img-newest img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* Gunakan object-fit: cover untuk menyembunyikan kelebihan gambar */
+}
+
+/* Tambahkan gaya lainnya sesuai kebutuhan */
+.pi-img-newest div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+
 .pi-img-wrapper {
 	position: relative;
 }
