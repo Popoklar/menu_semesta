@@ -21,7 +21,7 @@
                     <tr>
                         <td class="goods-page-image">
                             <a href="javascript:;"><img
-                                    src="{{ asset('/template/theme/assets') }}/pages/img/products/{{ $item->model->image }}"
+                                    src="{{ asset('/template/theme/images') }}/{{ $item->model->image }}"
                                     alt="{{ $item->model->image }}"></a>
                         </td>
                         <td class="goods-page-description">
