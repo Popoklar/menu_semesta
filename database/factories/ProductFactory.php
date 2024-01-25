@@ -42,7 +42,7 @@ class ProductFactory extends Factory
             ['name' => 'Red Velvet', 'description' => 'Red Velvet memukau dengan sentuhan bubuk Red Velvet yang istimewa, ...', 'price' => 22000, 'image' => 'red-valvet.jpg'],
 
             // HOT-COFFEE
-            ['name' => 'Latte', 'description' => 'Latte menghadirkan keharuman espresso yang dicampur dengan susu creamy, ...', 'price' => 24000, 'image' => 'latte'],
+            ['name' => 'Latte', 'description' => 'Latte menghadirkan keharuman espresso yang dicampur dengan susu creamy, ...', 'price' => 24000, 'image' => 'latte.jpg'],
             ['name' => 'Americano', 'description' => 'Americano menghadirkan keindahan kopi yang sederhana namun memukau. ...', 'price' => 18000, 'image' => 'americano.jpg'],
             ['name' => 'Vietnam Drip', 'description' => 'Vietnam Drip mempersembahkan sensasi kopi Vietnam yang kaya dan aromatik. ...', 'price' => 30000, 'image' => 'vietnamdrip.jpg'],
             ['name' => 'V-60', 'description' => 'V-60 menghadirkan keindahan kopi pour-over dengan desain elegan. ...', 'price' => 30000, 'image' => 'v-60.jpg'],

@@ -107,6 +107,12 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <div class="footer">
         <div class="container">
             <div class="row">
+                <a class="btn btn-danger" href="{{ route('dashboard') }}"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Keluar</a>
+                <form id="logout-form" method="POST" action="{{ route('logout') }}">
+                    @csrf
+                </form>
+                <br>
                 <!-- BEGIN COPYRIGHT -->
                 <div class="col-md-12 col-sm-12 text-center">
                     2024 © Yuriko. ALL Rights Reserved.
@@ -158,7 +164,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                     </div>
                 </div>
 
-                <div class="sticker sticker-sale"></div>
             </div>
         </div>
     </div>
@@ -172,8 +177,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <script src="{{ asset('/template/theme/assets') }}/plugins/jquery.min.js" type="text/javascript"></script>
     <script src="{{ asset('/template/theme/assets') }}/plugins/jquery-migrate.min.js" type="text/javascript"></script>
     <script src="{{ asset('/template/theme/assets') }}/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript">
-    </script>
-    <script src="{{ asset('/template/theme/assets') }}/corporate/scripts/back-to-top.js" type="text/javascript">
     </script>
     <script src="{{ asset('/template/theme/assets') }}/plugins/jquery-slimscroll/jquery.slimscroll.min.js"
         type="text/javascript"></script>

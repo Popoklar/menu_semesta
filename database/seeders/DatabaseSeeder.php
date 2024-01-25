@@ -19,22 +19,22 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         Category::create(
             [
-                'name' => 'Cappuccino',
-                'slug' => 'cappuccino'
+                'name' => 'Hot Coffe',
+                'slug' => 'hot-coffe'
             ]
         );
 
         Category::create(
             [
-                'name' => 'Affogato',
-                'slug' => 'affogato'
+                'name' => 'Non Coffe',
+                'slug' => 'non-coffe'
             ]
         );
 
         Category::create(
             [
-                'name' => 'Macchiato',
-                'slug' => 'macchiato'
+                'name' => 'Ice Coffe',
+                'slug' => 'ice-coffe'
             ]
         );
 
