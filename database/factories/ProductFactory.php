@@ -130,7 +130,6 @@ class ProductFactory extends Factory
             ['name' => 'Passionfruit Perfection', 'description' => 'Perfect blend of passionfruit flavors', 'price' => 27000, 'image' => 'passionfruit-perfection.jpg'],
             ['name' => 'Mango Mint Medley', 'description' => 'Mango and mint medley for a refreshing twist', 'price' => 29000, 'image' => 'mango-mint-medley.jpg'],
             ['name' => 'Wild Watermelon Wave', 'description' => 'Ride the wave of wild watermelon goodness', 'price' => 26000, 'image' => 'wild-watermelon-wave.jpg'],
-
         ];
 
         $categories = Category::pluck('id')->toArray();
